@@ -37,6 +37,7 @@ The **LDAP Server** settings define the communication settings used for LDAP aut
 | **Host** | URL of the LDAP server |
 | **Port** | LDAP server port number |
 | **Trusted CA certificate** |  _(LDAPS or STARTTLS protocols only)_ Certificate for the trusted certificate authority (CA) |
+We see multiple customers adding CA certificates bundle/chain. Since we do not support that, we should make it clear that the trusted CA should be a single certificate, not a chain.
 
 When defining multiple LDAP hosts, the organization tree structure must be identical for all hosts.
 
