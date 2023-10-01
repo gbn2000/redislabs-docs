@@ -36,7 +36,7 @@ Returns `OK` if the roles were successfully changed. Otherwise, it returns an er
 
 Use [`rladmin status shards`]({{<relref "/rs/references/cli-utilities/rladmin/status#status-shards">}}) to verify that the roles were changed.
 
-### Example
+### Example - there is something very wrong with the examples; they still show that master shards exists on the the node that was enslaved
 
 ```sh
 $ rladmin status shards node 2
