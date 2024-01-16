@@ -32,6 +32,12 @@ Before creating your Redis clusters or databases, these SSDs must be:
 
 For more information on node storage, see [Node persistent and ephemeral storage]({{<relref "/rs/installing-upgrading/install/plan-deployment/persistent-ephemeral-storage">}}).
 
+The prerequisites described in lines 26-30 are very confusing for the user
+I did the following to create an auto-tiering(rof) cluster:  
+*create gke while choosing the option to add SSD drive, (I did that via UI, but it can be done via cli)
+*create storageclass as intended in line 31 (can be done using cloudshell option on the UI)
+continue to next step
+
 ## Create a Redis Enterprise cluster
 
 To deploy a Redis Enterprise cluster (REC) with Auto Tiering, you'll need to specify the following in the `redisOnFlashSpec` section of your [REC custom resource]({{<relref "/kubernetes/reference/cluster-options.md">}}):
